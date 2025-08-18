@@ -25,7 +25,7 @@ export default function About() {
         <div className="card">
           <h2 className="card-title">🎓 Education</h2>
           <p>
-  Pursuing final year B.Tech in Computer Science and Engineering at <span className="highlight">KL University</span>, Vijayawada | CGPA: 9.4/10
+  Pursuing final year B.Tech in Computer Science and Engineerin at <span className="highlight">KL University</span>, Vijayawada | CGPA: 9.4/10
   
 </p>
 
