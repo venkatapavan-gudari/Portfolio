@@ -1,0 +1,113 @@
+/* Light mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+body.dark-mode {
+/*  background-color: #1a2b44;   /* 🔵 this makes your whole website blue */
+background-color: #3b6fa5;
+  color: white;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Base */
+.navbar {
+  width: 100%;
+  position: fixed; /* stays on top */
+  top: 0;
+  left: 0;
+  background: #2c3e50;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dark mode */
+.navbar.dark {
+  background: #1a1a1a;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 18px; /* reduced from 22px */
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0;   /* ensures it starts from the very left */
+  padding-left:0px; /* optional: some space from edge if needed */
+}
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Dark toggle */
+.dark-toggle {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: -100%;
+    flex-direction: column;
+    background: #2c3e50;
+    width: 200px;
+    text-align: center;
+    transition: right 0.3s ease;
+    padding: 15px 0;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

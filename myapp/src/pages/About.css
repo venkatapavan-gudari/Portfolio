@@ -1,0 +1,95 @@
+.about {
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2ff, #f3e8ff);
+  color: #222;
+  padding: 3rem 1.5rem;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2563eb; /* Blue */
+}
+
+.highlight-skill {
+  color: #9333ea; /* Purple */
+  font-weight: 600;
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.card p,
+.card li {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Call to action */
+.about-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
