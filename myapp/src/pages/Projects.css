@@ -97,4 +97,28 @@
 }
 
 
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #24292e; /* GitHub dark */
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  position: relative;   /* ensures it’s above other elements */
+  z-index: 10;          /* prevents hidden overlays blocking it */
+  cursor: pointer; 
+}
+
+.github-btn:hover {
+  background: #333;
+}
+
+.github-icon {
+  font-size: 18px;
+}
+
 
