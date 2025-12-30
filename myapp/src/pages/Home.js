@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import UpendraPhoto from "./pavan.jpg"; // make sure the path is correct
+import UpendraPhoto from "./pavanpp.jpg"; // make sure the path is correct
 
 export default function Home() {
   return (
